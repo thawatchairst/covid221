@@ -1,3 +1,3 @@
-web: gunicorn webCovid.wsgi --log-file
+web: gunicorn webCovid.wsgi 
 python manage.py collectstatic --noinput
 manage.py migrate

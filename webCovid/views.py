@@ -15,7 +15,6 @@ def formatdate(time1):
 
 def index(request):
     req = requests.get('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all')
-    time.sleep(2)
     req_po = requests.get('https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces')
     
     jsonData_Po =req_po.json()

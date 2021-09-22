@@ -3,7 +3,13 @@ import requests
 # Create your views here.
 
 
+def formatdate(time1):
 
+    for list1 in time1:
+        for x,y in list1.items():
+            if x =='update_date':
+                date1 =y
+    print(date1)
 
 def index(request):
     req = requests.get('https://covid19.ddc.moph.go.th/api/Cases/today-cases-all')
